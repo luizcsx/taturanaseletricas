@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taturanas Elétricas</title>
+  <link rel="/css/index.css" />
+
+<div style="background:#EEEEEE;color:#000000;font-family:Verdana,Arial,sans-serif;">
+
+  <nav class="nav-sticky">
+    <div class="nav-brand">
+      <i class="fa-solid fa-bolt"></i>
+      TATURANAS ELÉTRICAS
+      <span class="nav-sub">— Site Oficial</span>
+    </div>
+    <ul class="nav-links">
+      <li><a onclick="scroll2('s-sobre')"><i class="fa-solid fa-circle-info"></i> Sobre</a></li>
+      <li><a onclick="scroll2('s-membros')"><i class="fa-solid fa-users"></i> Integrantes</a></li>
+      <li><a onclick="scroll2('s-fotos')"><i class="fa-solid fa-image"></i> Fotos</a></li>
+      <li><a onclick="scroll2('s-ficha')"><i class="fa-solid fa-sliders"></i> Ficha Técnica</a></li>
+      <li><a onclick="scroll2('s-faq')"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+      <li><a onclick="scroll2('s-download')"><i class="fa-solid fa-compact-disc"></i> Download</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <i class="fa-solid fa-bars" id="hb-icon"></i>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a onclick="scroll2('s-sobre');toggleMenu()"><i class="fa-solid fa-circle-info"></i> Sobre</a>
+    <a onclick="scroll2('s-membros');toggleMenu()"><i class="fa-solid fa-users"></i> Integrantes</a>
+    <a onclick="scroll2('s-fotos');toggleMenu()"><i class="fa-solid fa-image"></i> Fotos</a>
+    <a onclick="scroll2('s-historia');toggleMenu()"><i class="fa-solid fa-clock-rotate-left"></i> História</a>
+    <a onclick="scroll2('s-ficha');toggleMenu()"><i class="fa-solid fa-sliders"></i> Ficha Técnica</a>
+    <a onclick="scroll2('s-faq');toggleMenu()"><i class="fa-solid fa-circle-question"></i> FAQ</a>
+    <a onclick="scroll2('s-download');toggleMenu()"><i class="fa-solid fa-compact-disc"></i> Download</a>
+  </div>
+
+  <div class="banner-wrap">
+    <img src="/img/banner.png"
+         alt="Nossa Logotipo!!"
+         onerror="this.style.display='none';document.getElementById('banner-fb').style.display='block'">
+    <div class="banner-fallback" id="banner-fb">TATURANAS ELÉTRICAS</div>
+  </div>
+
+  <div class="site-wrap">
+
+    <div class="sidebar">
+      <div class="sidebar-box">
+        <div class="sidebar-head"><i class="fa-solid fa-list"></i> MENU</div>
+        <a class="sidebar-link" onclick="scroll2('s-sobre')"><i class="fa-solid fa-circle-info"></i> Sobre a Banda</a>
+        <a class="sidebar-link" onclick="scroll2('s-membros')"><i class="fa-solid fa-users"></i> Integrantes</a>
+        <a class="sidebar-link" onclick="scroll2('s-fotos')"><i class="fa-solid fa-image"></i> Fotos</a>
+        <a class="sidebar-link" onclick="scroll2('s-historia')"><i class="fa-solid fa-clock-rotate-left"></i> História</a>
+        <a class="sidebar-link" onclick="scroll2('s-ficha')"><i class="fa-solid fa-sliders"></i> Ficha Técnica</a>
+        <a class="sidebar-link" onclick="scroll2('s-faq')"><i class="fa-solid fa-circle-question"></i> FAQs</a>
+        <a class="sidebar-link" onclick="scroll2('s-download')"><i class="fa-solid fa-compact-disc"></i> Download</a>
+      </div>
+      <div class="sidebar-box">
+        <div class="sidebar-head"><i class="fa-solid fa-link"></i> LINKS</div>
+        <a class="sidebar-link" href="https://centro-educacional-de-itaborai.vercel.app"><i class="fa-solid fa-arrow-right"></i> C.E.I.</a>
+        <a class="sidebar-link" href="https://instagram.com/taturanaseletricas"><i class="fa-solid fa-arrow-right"></i> Nosso Instagram</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-arrow-right"></i> ???</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-arrow-right"></i> ???</a>
+      </div>
+      <div class="sidebar-box">
+        <div class="sidebar-head"><i class="fa-solid fa-rss"></i> NOVIDADES</div>
+        <div style="padding:10px;font-size:11px;font-family:Arial,sans-serif;color:#444;line-height:1.6;border-bottom:1px solid #F0F0F0;">
+          <i class="fa-solid fa-circle-dot" style="font-size:8px;color:var(--gold-dark);margin-right:4px;"></i>
+          Site reformulado — Abr/2025
+        </div>
+        <div style="padding:10px;font-size:11px;font-family:Arial,sans-serif;color:#444;line-height:1.6;border-bottom:1px solid #F0F0F0;">
+          <i class="fa-solid fa-circle-dot" style="font-size:8px;color:var(--gold-dark);margin-right:4px;"></i>
+          CD em produção — em breve
+        </div>
+        <div style="padding:10px;font-size:11px;font-family:Arial,sans-serif;color:#444;line-height:1.6;">
+          <i class="fa-solid fa-circle-dot" style="font-size:8px;color:var(--gold-dark);margin-right:4px;"></i>
+          Novo integrante a confirmar
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+
+      <div class="card" id="s-sobre">
+        <div class="card-head"><i class="fa-solid fa-circle-info"></i> SOBRE A BANDA</div>
+        <div class="card-body">
+          <p>As <strong>Taturanas Elétricas</strong> será uma banda de rock e humor do Rio de Janeiro. A proposta é música divertida, letras nonsense e muito choque de realidade (no sentido literal do termo).</p>
+          <hr class="divider">
+          <table style="width:100%;font-size:12px;border-collapse:collapse;">
+            <tr><td style="padding:4px 0;color:#555;width:110px;"><i class="fa-solid fa-guitar" style="color:var(--gold-dark);width:14px;"></i> Gênero</td><td style="padding:4px 0;"><strong>Rock Infantil / Humor</strong></td></tr>
+            <tr><td style="padding:4px 0;color:#555;"><i class="fa-solid fa-location-dot" style="color:var(--gold-dark);width:14px;"></i> Origem</td><td style="padding:4px 0;">Rio de Janeiro — RJ — Brasil</td></tr>
+            <tr><td style="padding:4px 0;color:#555;"><i class="fa-solid fa-calendar" style="color:var(--gold-dark);width:14px;"></i> Desde</td><td style="padding:4px 0;">2024</td></tr>
+            <tr><td style="padding:4px 0;color:#555;"><i class="fa-solid fa-users" style="color:var(--gold-dark);width:14px;"></i> Formação</td><td style="padding:4px 0;">Em andamento</td></tr>
+          </table>
+          <hr class="divider">
+          <p style="font-size:12px;color:#444;">O nome vem da taturana (lagarta peluda) combinada com eletricidade. A ideia? <b>Chocar</b> as pessoas. Entendeu? Não? Tudo bem.</p>
+          <div style="margin-top:10px;background:#FFFBE6;border-left:3px solid var(--gold);padding:8px 12px;font-size:11px;color:#555;">
+            <i class="fa-solid fa-triangle-exclamation" style="color:var(--gold-dark);"></i>&nbsp; Este site não se responsabiliza por músicas grudando na sua cabeça.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="s-membros">
+        <div class="card-head"><i class="fa-solid fa-users"></i> INTEGRANTES</div>
+        <div class="card-body">
+          <p style="font-size:11px;color:#555;margin-bottom:12px;text-align:center;">Conheça os artistas por trás do som:</p>
+          <div class="member-grid">
+            <div class="member-card">
+              <div class="member-photo"><i class="fa-solid fa-user"></i></div>
+              <div class="member-info">
+                <div class="member-name">O Fundador</div>
+                <div class="member-role"><i class="fa-solid fa-microphone" style="font-size:10px;color:var(--gold-dark);"></i> Voz / Composição</div>
+                <div class="member-bio">"Quieto por fora, louco por dentro."</div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-photo" style="background:#E8E8E8;"><i class="fa-solid fa-user-plus" style="color:#BBBBBB;"></i></div>
+              <div class="member-info">
+                <div class="member-name" style="color:#999;">[ A Definir ]</div>
+                <div class="member-role" style="color:#AAAAAA;"><i class="fa-solid fa-question" style="font-size:10px;color:#CCC;"></i> Colaborador — em breve</div>
+                <div class="member-bio" style="color:#BBBBBB;">Vaga em aberto.</div>
+              </div>
+            </div>
+          </div>
+          <p style="margin-top:12px;font-size:10px;color:#999;text-align:center;"><i class="fa-solid fa-circle-exclamation" style="font-size:10px;"></i> Banda em formação. Vagas disponíveis para quem aguentar os ensaios.</p>
+        </div>
+      </div>
+
+      <div class="card" id="s-fotos">
+        <div class="card-head"><i class="fa-solid fa-image"></i> FOTOS DA BANDA</div>
+        <div class="card-body">
+          <p style="font-size:11px;color:#555;margin-bottom:12px;text-align:center;">Arquivo fotográfico oficial:</p>
+          <div class="photos-grid">
+            <div class="photo-item">
+              <div class="photo-rect"><i class="fa-solid fa-camera"></i></div>
+              <div class="photo-cap">Nenhum</div>
+            </div>
+            <div class="photo-item">
+              <div class="photo-rect"><i class="fa-solid fa-camera"></i></div>
+              <div class="photo-cap">Nenhum</div>
+            </div>
+            <div class="photo-item">
+              <div class="photo-rect"><i class="fa-solid fa-camera"></i></div>
+              <div class="photo-cap">Nenhum</div>
+            </div>
+          </div>
+          <p style="margin-top:10px;font-size:10px;color:#999;text-align:center;"><i class="fa-solid fa-clock" style="font-size:10px;"></i> Mais fotos em breve.</p>
+        </div>
+      </div>
+
+      <div class="card" id="s-ficha">
+        <div class="card-head"><i class="fa-solid fa-sliders"></i> FICHA TÉCNICA</div>
+        <div class="card-body">
+          <p style="font-size:11px;color:#555;margin-bottom:14px;">Os números e detalhes por trás da banda:</p>
+          <div class="spec-grid">
+            <div class="spec-box">
+              <div class="spec-icon"><i class="fa-solid fa-users"></i></div>
+              <div class="spec-val">2</div>
+              <div class="spec-lbl">Integrantes</div>
+              <div class="spec-detail">1 confirmado,<br>1 a definir.</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="spec-val">RJ</div>
+              <div class="spec-lbl">Origem</div>
+              <div class="spec-detail">Itaboraí,<br>Rio de Janeiro.</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-icon"><i class="fa-solid fa-calendar-days"></i></div>
+              <div class="spec-val">2026</div>
+              <div class="spec-lbl">Ano de fundação</div>
+              <div class="spec-detail">Ainda jovens<br>e perigosos.</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-icon"><i class="fa-solid fa-compact-disc"></i></div>
+              <div class="spec-val">0</div>
+              <div class="spec-lbl">CDs em produção</div>
+              <div class="spec-detail">Pois é,<br>haja paciência.</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-icon"><i class="fa-solid fa-guitar"></i></div>
+              <div class="spec-val">Rock</div>
+              <div class="spec-lbl">Gênero principal</div>
+              <div class="spec-detail">Juvenil<br>e Humorístico</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+              <div class="spec-val">0</div>
+              <div class="spec-lbl">Shows realizados</div>
+              <div class="spec-detail">Por enquanto.<br>Paciência.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="s-faq">
+        <div class="card-head"><i class="fa-solid fa-circle-question"></i> PERGUNTAS FREQUENTES (FAQ)</div>
+        <div class="card-body" style="padding:0;">
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q"><span><i class="fa-solid fa-spider faq-lead"></i> O que é uma taturana elétrica?</span><i class="fa-solid fa-chevron-down faq-icon"></i></div>
+            <div class="faq-a">Uma taturana elétrica é uma lagarta peluda com atitude e 220v de personalidade. Cientificamente não existe. Artisticamente, é a nossa mascote.</div>
+          </div>
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q"><span><i class="fa-solid fa-compact-disc faq-lead"></i> Quando sai o CD?</span><i class="fa-solid fa-chevron-down faq-icon"></i></div>
+            <div class="faq-a">Quando ficar pronto. Que é diferente de "em breve". Estamos trabalhando nisso. Mais ou menos.</div>
+          </div>
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q"><span><i class="fa-solid fa-calendar faq-lead"></i> Vocês fazem shows?</span><i class="fa-solid fa-chevron-down faq-icon"></i></div>
+            <div class="faq-a">Ainda não. Mas o dia vai chegar. Salve este site nos favoritos para não perder nada.</div>
+          </div>
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q"><span><i class="fa-solid fa-user-plus faq-lead"></i> Posso entrar na banda?</span><i class="fa-solid fa-chevron-down faq-icon"></i></div>
+            <div class="faq-a">Talvez. Depende do seu nível de caos interno.</div>
+          </div>
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q"><span><i class="fa-solid fa-download faq-lead"></i> O download do CD é real?</span><i class="fa-solid fa-chevron-down faq-icon"></i></div>
+            <div class="faq-a">Não. É uma pegadinha. Se você clicou e se surpreendeu, parabéns: você foi o visitante número especial de hoje.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="s-download">
+        <div class="card-head"><i class="fa-solid fa-compact-disc"></i> DOWNLOAD — CD OFICIAL</div>
+        <div class="card-body" style="text-align:center;">
+          <p style="font-size:14px;font-weight:bold;font-family:Verdana,Arial,sans-serif;margin-bottom:4px;">Choque de Realidade Vol. 1</p>
+          <p style="font-size:11px;color:#555;margin-bottom:14px;">CD completo da banda — disponível para download gratuito.</p>
+          <div class="dl-center">
+            <div class="dl-wrap">
+              <div class="troll-bubble" id="troll-lbl"><i class="fa-solid fa-face-grin-squint-tears"></i> bobalhaokkkkkkkkkkkkkkk</div>
+              <button class="dl-btn" onclick="triggerTroll(this)">
+                <i class="fa-solid fa-download"></i> BAIXAR A NOSSA CD-ROM (ISO - 19 MB)
+              </button>
+            </div>
+          </div>
+          <p style="font-size:10px;color:#999;margin-top:10px;"><i class="fa-solid fa-shield-halved" style="font-size:10px;"></i> Arquivo livre de vírus. Não garantimos o resto.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div style="display:flex;align-items:center;gap:8px;">
+      <span class="sponsor-label-txt">Apoio:</span>
+      <div class="sponsor-box"><i class="fa-solid fa-building"></i><span>LOGO AQUI</span></div>
+      <div class="sponsor-box"><i class="fa-solid fa-star"></i><span>PARCEIRO</span></div>
+    </div>
+    <div class="footer-right">
+      <div class="footer-copy">
+        <strong>Taturanas Elétricas</strong> — Site Oficial<br>
+        &copy; 2026 — Itaboraí, Rio de Janeiro.<br>
+        <span style="font-size:9px;color:#555;">Todos os direitos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+function scroll2(id){var el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth',block:'start'});}
+function toggleMenu(){var m=document.getElementById('mobile-menu');var ic=document.getElementById('hb-icon');m.classList.toggle('open');ic.className=m.classList.contains('open')?'fa-solid fa-xmark':'fa-solid fa-bars';}
+function triggerTroll(btn){document.getElementById('troll-lbl').style.display='block';btn.innerHTML='<i class="fa-solid fa-triangle-exclamation"></i> arquivo não encontrado';btn.style.color='#FF6666';btn.style.borderColor='rgba(255,100,100,0.5)';}
+function toggleFaq(item){var isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(el){el.classList.remove('open');});if(!isOpen)item.classList.add('open');}
+</script>
